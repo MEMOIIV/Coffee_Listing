@@ -1,0 +1,151 @@
+body {
+    background-color: var(--blackColor);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  layer Loading  */
+.layerLoading {
+    background-color: var(--mainColor);
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 50px;  
+}
+
+.colorIc {
+    color: var(--whiteColor);
+}
+
+
+/* First div => title and button */
+
+.main_div {
+    position: relative; 
+    top: -154px;
+    width: 85%;  
+}
+
+.title {
+    width: 43%; 
+}
+
+.text_color1 {
+    color: var(--whiteColor);
+}
+
+.text_color2 {
+    color: var(--secondColor);
+}
+
+.text_color1, 
+.text_color2 {
+    position: relative;
+    z-index: 2; 
+}
+.imgLayer {
+    position: absolute;
+    top: -20px;
+    left: 45%;
+    width: 55%;
+    z-index: 1; 
+}
+
+
+
+.bg_color1 {
+    background-color: var(--mainColor);
+}
+
+
+
+
+/*  second div => api coffee  */
+
+.row {
+    width: 90%;
+    margin: auto;
+}
+
+.nameCoffee {
+    color: var(--whiteColor);
+}
+
+.bg_btnC {
+    background-color: var(--yellowColor);
+    font-weight: 600;
+}
+
+.bg_btnC:hover {
+    background-color: var(--yellowColor);
+}
+
+.bg_btnC2 {
+    background-color: var(--greenerColor);
+    font-weight: 600;
+}
+
+.bg_btnC2:hover {
+    background-color: var(--greenerColor);
+}
+
+.color_stars {
+    color: var(--yellowColor);
+}
+
+.colorNo_stars {
+    color: var(--secondColor);
+}
+
+.title_stars {
+    color: var(--whiteColor);
+    font-weight: 600;
+}
+
+.title_vote {
+    color: var(--secondColor);
+    font-weight: 500;
+}
+
+.No_rating{
+    color: var(--secondColor);
+}
+
+.Sold_out{
+    color: var(--redColor);
+    font-weight: 600;
+}
+
+
+/* @media screen */
+
+@media screen and (min-width: 481px) and (max-width: 786px) {
+    .main_div {
+        position: relative; 
+        top: -60px;
+        width: 85%;  
+    }
+    .title{
+        width: 100%;
+    }
+    .mt-2{
+        margin-top: 30px !important;
+        position: relative;
+        z-index: 2;
+    }
+}
+@media screen and (min-width: 787px) and (max-width: 1024px) {
+    .main_div {
+        position: relative; 
+        top: -154px;
+        width: 85%;  
+    }
+    .title{
+        width: 65%;
+    }
+    .mt-2{
+        margin-top: 30px !important;
+        position: relative;
+        z-index: 2;
+    }
+}
